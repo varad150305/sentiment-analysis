@@ -1,0 +1,37 @@
+{
+  "artifact_schema_version": "classical_nlp_v1",
+  "project_title": "Sentiment Classification using Classical Machine Learning and TF-IDF Features",
+  "dataset": {
+    "name": "imdb",
+    "source": "huggingface/imdb",
+    "train_size": 20000,
+    "validation_size": 5000,
+    "test_size": 25000,
+    "random_seed": 42,
+    "label_names": {
+      "0": "negative",
+      "1": "positive"
+    }
+  },
+  "tfidf": {
+    "max_features": 50000,
+    "ngram_range": [
+      1,
+      2
+    ],
+    "min_df": 2,
+    "max_df": 0.95,
+    "stop_words": "english",
+    "sublinear_tf": true
+  },
+  "evaluation": {
+    "metrics": [
+      "accuracy",
+      "precision",
+      "recall",
+      "f1"
+    ],
+    "zero_division": 0,
+    "confidence_definition": "max predicted probability"
+  }
+}

@@ -1,0 +1,11 @@
+{
+    "model_name": "bert-base-uncased",
+    "max_length": 256,
+    "epochs": 2,
+    "learning_rate": 2e-05,
+    "train_batch_size": 16,
+    "eval_batch_size": 32,
+    "weight_decay": 0.01,
+    "warmup_steps": 500,
+    "fp16": true
+}

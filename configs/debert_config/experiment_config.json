@@ -1,0 +1,10 @@
+{
+    "model_name": "microsoft/deberta-v3-base",
+    "max_length": 256,
+    "batch_size": 16,
+    "learning_rate": 2e-05,
+    "epochs": 3,
+    "fp16": false,
+    "optimizer": "AdamW",
+    "scheduler": "linear"
+}
